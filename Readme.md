@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Сурин](https://up.htmlacademy.ru/htmlcss/36/user/2150407).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
