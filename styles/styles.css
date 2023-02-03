@@ -56,10 +56,76 @@ body {
 
 .hero {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #ffffff;
   background-image: url("../images/background/background-hero.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.hero-heading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.divider {
+  background-color: #ffffff;
+  background-image: url("../images/background/divider.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-inner {
+  background-color: #ffffff;
+  background-image: url("../images/background/background-filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.frame {
+  font-weight: 700;
+  text-align: center;
+}
+.frame-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.frame-description {
+  color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+.background-blue .advantages-description {
+  color: #ffffff;
+  background: #82B3D3;
+}
+
+.background-blue {
+  color: #ffffff;
+  background: #82B3D3;
+}
+.background-light-blue {
+  background: rgba(131, 179, 211, 0.12);
+}
+.background-gray {
+  background: rgba(131, 179, 211, 0.2);
 }
 
 .button {
@@ -67,6 +133,10 @@ body {
   border-radius: 4px;
   text-align: center;
   text-transform: uppercase;
+}
+
+form .button {
+  background: #82B3D3;
 }
 
 .button-small {
@@ -77,4 +147,40 @@ body {
 .button-big {
   font-size: 20px;
   line-height: 36px;
+}
+
+.hotel-search {
+  text-align: center;
+}
+
+.subscription {
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: url("../images/background/background-subscription.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.page-footer {
+
+}
+
+.footer-social {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.contacts-phone {
+  color: #000000;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.website {
+
 }
