@@ -135,8 +135,16 @@ body {
   text-transform: uppercase;
 }
 
-form .button {
+.button-transparent {
+  background-color: rgba(256,256,256,0)
+}
+
+.button-blue {
   background: #82B3D3;
+}
+
+.button-green {
+  background: #7DB54F;;
 }
 
 .button-small {
@@ -162,10 +170,6 @@ form .button {
   text-align: center;
 }
 
-.page-footer {
-
-}
-
 .footer-social {
   color: #000000;
   background-color: #ffffff;
@@ -179,8 +183,4 @@ form .button {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.website {
-
 }
