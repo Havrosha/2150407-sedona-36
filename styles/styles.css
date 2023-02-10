@@ -35,7 +35,7 @@ body {
 }
 
 .main-content {
-  background-color: #ffffff;;
+  background-color: #FFFFFF;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -69,7 +69,7 @@ body {
 }
 
 .button-green {
-  background: #7DB54F;;
+  background: #7DB54F;
 }
 
 .button-small {
@@ -94,14 +94,13 @@ body {
 
 .navigation-link {
   color: inherit;
-  background-color: inherit;
   text-decoration: none;
   text-transform: capitalize;
 }
 
 .hero {
-  color: #ffffff;
-  background-color: #82b682D9;
+  color: #FFFFFF;
+  background-color: #82B682D9;
   background-image: url("../images/background/background-hero.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -159,11 +158,11 @@ body {
 }
 
 .advantages-blue .advantages-description {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .advantages-blue {
-  color: #ffffff;
+  color: #FFFFFF;
   background: #82B3D3;
 }
 .advantages-light-blue {
@@ -185,7 +184,7 @@ body {
 }
 
 .subscription {
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #82B3D3;
   background-image: url("../images/background/background-subscription.jpg");
   background-size: 100% auto;
@@ -195,13 +194,13 @@ body {
 
 .subscription-transparent {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   background-image: none;
 }
 
 .footer-social {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .contacts-phone {
@@ -238,7 +237,7 @@ body {
 }
 
 .stars {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   background-image: url("../images/graphics/star.svg");
   background-repeat: no-repeat;
 }
@@ -251,7 +250,7 @@ body {
 }
 
 .main-inner {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   background-image: url("../images/background/background-filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
