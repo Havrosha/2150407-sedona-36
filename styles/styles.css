@@ -30,17 +30,47 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  height: 100%;
   background-color: #F2F2F2;
 }
 
 .main-content {
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.subscription-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+}
+
+.navigation .navigation-list-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .clear-list {
@@ -144,12 +174,20 @@ body {
 }
 
 .advantages {
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
 }
+
+.advantages-item {
+width: 400px;
+height: 385px;
+}
+
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
@@ -162,6 +200,7 @@ body {
 }
 
 .advantages-blue {
+  width: 1200px;
   color: #FFFFFF;
   background: #82B3D3;
 }
@@ -242,6 +281,26 @@ body {
   background-repeat: no-repeat;
 }
 
+.catalog-filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1060px;
+  height: 160px;
+}
+
+.catalog-filter-container-left {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+}
+
+.catalog-filter-container-right {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+
 .catalog-filter-title {
   color: #FFFFFF;
   font-weight: 700;
@@ -254,6 +313,15 @@ body {
   background-image: url("../images/background/background-filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.inner-header {
+  margin-bottom: 40px;
+}
+
+.inner-header-title-container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .inner-header-title {
@@ -296,4 +364,25 @@ body {
 
 .pagination-link {
   text-decoration: none;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+}
+
+.footer-social {
+  width: 240px;
+  height: 50px;
+}
+
+.contacts {
+  width: 720px;
+  height: 50px;
+}
+
+.website {
+  width: 150px;
+  height: 50px;
 }
