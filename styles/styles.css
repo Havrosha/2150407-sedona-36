@@ -215,13 +215,6 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
-.quantity-hotel {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
 .hotel-search {
   text-align: center;
 }
@@ -343,11 +336,36 @@ body {
 }
 
 .sorting-container {
-  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.quantity-hotel {
+  display: inline;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotel-catalog-container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .hotel-catalog {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel-card-container {
+  padding: 20px;
+}
+
+.pagination-container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .pagination {
