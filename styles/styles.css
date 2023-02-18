@@ -342,7 +342,16 @@ body {
   color: #FFFFFF;
 }
 
+.sorting-container {
+  display: flex;
+}
+
+.hotel-catalog {
+  display: flex;
+}
+
 .pagination {
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
