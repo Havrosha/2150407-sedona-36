@@ -54,25 +54,6 @@ body {
   margin: 0 auto;
 }
 
-.subscription-container {
-  flex-grow: 1;
-}
-
-.navigation {
-  display: flex;
-}
-
-.navigation-list {
-  margin: 0;
-  padding: 0;
-  width: 600px;
-}
-
-.navigation .navigation-list-user {
-  max-width: 300px;
-  margin-left: auto;
-}
-
 .clear-list {
   margin: 0;
   padding: 0;
@@ -110,6 +91,23 @@ body {
 .button-big {
   font-size: 20px;
   line-height: 36px;
+}
+
+.subscription-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  width: 600px;
+}
+
+.navigation-list-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .navigation-list {
@@ -185,7 +183,6 @@ body {
 
 .advantages-item {
   width: 400px;
-  height: 385px;
 }
 
 .advantages-description {
@@ -200,22 +197,22 @@ body {
 }
 
 .advantages-blue {
-  width: 1200px;
+  display: flex;
+  width: 100%;
   color: #FFFFFF;
   background: #82B3D3;
 }
+
+.image-container {
+  display: flex;
+  align-items: stretch;
+}
+
 .advantages-light-blue {
   background: rgba(131, 179, 211, 0.12);
 }
 .advantages-gray {
   background: rgba(131, 179, 211, 0.2);
-}
-
-.quantity-hotel {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
 }
 
 .hotel-search {
@@ -284,9 +281,7 @@ body {
 .catalog-filter-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 1060px;
-  height: 160px;
+  padding: 0 70px;
 }
 
 .catalog-filter-container-left {
@@ -320,8 +315,7 @@ body {
 }
 
 .inner-header-title-container {
-  width: 1060px;
-  margin: 0 auto;
+  padding: 0 70px;
 }
 
 .inner-header-title {
@@ -341,7 +335,41 @@ body {
   color: #FFFFFF;
 }
 
+.sorting-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.quantity-hotel {
+  display: inline;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotel-catalog-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.hotel-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel-card-container {
+  padding: 20px;
+}
+
+.pagination-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .pagination {
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -369,20 +397,16 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  height: 120px;
 }
 
 .footer-social {
   width: 240px;
-  height: 50px;
 }
 
 .contacts {
-  width: 720px;
-  height: 50px;
+  margin: 0 auto;
 }
 
 .website {
   width: 150px;
-  height: 50px;
 }
