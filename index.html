@@ -9,37 +9,39 @@
     <div class="main-content">
       <!--шапка сайта-->
       <header class="page-header">
-      <a class="navigation-logo">
-        <img class="page-header-logo" src="images/header-logo.svg" width="140" height="70" alt="Логотип «Седона».">
-      </a>
-      <nav class="navigation">
-        <ul class="navigation-list clear-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list clear-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <button class="button button-small" type="button">Хочу сюда!</button>
-          </li>
-        </ul>
-      </nav>
+          <nav class="navigation">
+            <ul class="navigation-list clear-list">
+              <li>
+                <a class="navigation-logo">
+                  <img class="page-header-logo" src="images/header-logo.svg" width="140" height="70" alt="Логотип «Седона».">
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-current">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+            <ul class="navigation-list clear-list navigation-list-user">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <button class="button button-small" type="button">Хочу сюда!</button>
+              </li>
+            </ul>
+          </nav>
       </header>
       <!--основное содержимое-->
       <main class="main-index">
@@ -53,9 +55,13 @@
       </div>
       <ul class="advantages clear-list">
         <li class="advantages-item advantages-blue">
-          <h3 class="advantages-name">Настоящий городок</h3>
-          <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="image-motel" src="images/motel.jpg" width="800" height="384" alt="Мотель в Седоне на фоне гор." >
+          <div class="advantages-name-container">
+            <h3 class="advantages-name">Настоящий городок</h3>
+            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div class="image-container">
+            <img class="image-motel" src="images/motel.jpg" width="800" height="385" alt="Мотель в Седоне на фоне гор.">
+          </div>
         </li>
         <li class="advantages-item advantages-light-blue">
           <h3 class="advantages-name">Небольшая площадь</h3>
@@ -70,9 +76,13 @@
           <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="advantages-item advantages-blue">
-          <h3 class="advantages-name">Там есть мост дьявола</h3>
-          <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          <img class="image-most" src="images/bridge.jpg" width="800" height="385" alt="Мост Дьявола. Природный мост из песчаника в штате Аризона на фоне гор и леса." >
+          <div class="advantages-name-container">
+            <h3 class="advantages-name">Там есть мост дьявола</h3>
+            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
+          <div class="image-container">
+            <img class="image-most" src="images/bridge.jpg" width="800" height="385" alt="Мост Дьявола. Природный мост из песчаника в штате Аризона на фоне гор и леса." >
+          </div>
         </li>
       </ul>
       <div class="frame">
@@ -100,7 +110,7 @@
       </section>
       </main>
       <!--блок подписки-->
-      <section class="subscription">
+      <section class="subscription-container subscription">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
