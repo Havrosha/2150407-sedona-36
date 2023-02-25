@@ -54,6 +54,17 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .clear-list {
   margin: 0;
   padding: 0;
@@ -61,6 +72,8 @@ body {
 }
 
 .button {
+  border-style: none;
+  padding: 8px 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -103,6 +116,9 @@ body {
 
 .navigation-list {
   width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70px;
 }
 
 .navigation-list-user {
@@ -124,6 +140,7 @@ body {
   color: inherit;
   text-decoration: none;
   text-transform: capitalize;
+  padding: 20px 16px;
 }
 
 .hero {
@@ -132,6 +149,8 @@ body {
   background-image: url("../images/background/background-hero.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .hero-heading {
@@ -156,6 +175,8 @@ body {
 .frame {
   font-weight: 700;
   text-align: center;
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .frame-title {
@@ -183,6 +204,14 @@ body {
 
 .advantages-item {
   width: 400px;
+}
+
+.advantages-text-container {
+  padding: 112.5px 85px;
+}
+
+.advantages-description-container {
+  padding: 81px 85px;
 }
 
 .advantages-description {
@@ -219,6 +248,11 @@ body {
   text-align: center;
 }
 
+.hotel-search-container {
+  padding: 0;
+  margin: 96px auto;
+}
+
 .subscription {
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -226,6 +260,8 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscription-transparent {
