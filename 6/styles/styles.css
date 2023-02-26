@@ -134,6 +134,14 @@ body {
   min-width: 191px;
 }
 
+.button-catalog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 191px;
+  min-height: 104px;
+}
+
 .subscription-container {
   flex-grow: 1;
 }
@@ -163,6 +171,10 @@ body {
 
 .navigation-item {
   text-align: center;
+}
+
+.avigation-item-button {
+  margin-left: 20px;
 }
 
 .navigation-link {
@@ -369,6 +381,7 @@ body {
 .hotel-content-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
 }
 
 .hotel-card-link {
@@ -388,10 +401,14 @@ body {
 }
 
 .hotel-card-rating {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  background: #F2F2F2;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
 }
 
 .stars {
@@ -449,6 +466,8 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
+  gap: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
