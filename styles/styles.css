@@ -116,17 +116,14 @@ body {
 }
 
 .button-view {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
 
 .button-view-current {
-  width: 48px;
-  height: 48px;
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .button-search {
@@ -482,6 +479,7 @@ body {
 
 .button-view-container {
   display: flex;
+  gap: 8px;
   flex-wrap: wrap;
   align-items: center;
   width: 160px;
@@ -502,7 +500,11 @@ body {
   text-transform: uppercase;
 }
 
-.pagination-item {
+.pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background: #82B3D3;
   text-align: center;
   border-radius: 4px;
@@ -510,16 +512,12 @@ body {
   min-height: 60px;
 }
 
-.pagination-item-current {
+.pagination-link-current {
   background: #F2F2F2;
 }
 
-.pagination-item-unwrap {
+.pagination-link-unwrap {
   background: #FFFFFF;
-}
-
-.pagination-link {
-  text-decoration: none;
 }
 
 .page-footer {
