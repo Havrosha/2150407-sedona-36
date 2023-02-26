@@ -118,7 +118,15 @@ body {
 .button-view {
   width: 48px;
   height: 48px;
-  border: solid salmon 2px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-view-current {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .button-search {
@@ -531,10 +539,14 @@ body {
 }
 
 .footer-social-item {
-  border: solid salmon 2px;
-  width: 47px;
-  height: 40px;
+  background: #82B3D3;
+  min-width: 47px;
+  min-height: 40px;
 
+}
+
+.button-social {
+  background: #82B3D3;
 }
 
 .contacts {
