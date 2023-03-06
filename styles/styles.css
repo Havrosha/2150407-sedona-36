@@ -924,4 +924,18 @@ padding-left: 3px;
 
 .website-link {
   width: 150px;
+  color: #000000;
+}
+
+.website-link:hover {
+  color: #756157;
+}
+
+.website-link:focus {
+  color: #756157;
+}
+
+.website-link:active {
+  color: #756157;
+  opacity: 0.3;
 }
