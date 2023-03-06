@@ -108,6 +108,7 @@ body {
 }
 
 .button-transparent:hover {
+  background-color: transparent;
   opacity: 0.6;
 }
 
@@ -251,6 +252,14 @@ background-position: center;
   padding: 20px 16px;
 }
 
+ .navigation-item-icon {
+  width: 44px;
+}
+
+.navigation-link-icon {
+  padding: 22px 12px 18px;
+}
+
 .navigation-link-current::before {
   position: absolute;
   right: 15px;
@@ -265,7 +274,7 @@ background-position: center;
   background-color: #F2F2F2;
 }
 
-.navigation-icon {
+/* .navigation-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -273,7 +282,7 @@ background-position: center;
   left: 0;
   margin: auto;
   fill: #dbdbdb;
-}
+} */
 
 .page-header {
   position: relative;
