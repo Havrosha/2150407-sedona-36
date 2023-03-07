@@ -243,7 +243,16 @@ background-position: center;
   padding: 20px 16px;
 }
 
- .navigation-item-icon {
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756257;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
+.navigation-item-icon {
   width: 44px;
 }
 
@@ -275,10 +284,6 @@ background-position: center;
   height: 2px;
   background-color: #756257  ;
   content: "";
-}
-
-.navigation-link:hover {
-  background-color: #F2F2F2;
 }
 
 .page-header {
@@ -511,30 +516,6 @@ background-position: center;
 .advantages-image-container {
   margin: 0 auto;
 }
-
-/* .advantages-image-container-house {
-  width: 75px;
-  height: 72px;
-  margin-bottom: 30px;
-  background-image: url("../images/house.svg");
-  background-repeat: no-repeat;
-} */
-
-/* .advantages-image-container-eating {
-  width: 74px;
-  height: 70px;
-  margin-bottom: 31px;
-  background-image: url("../images/eating.svg");
-  background-repeat: no-repeat;
-} */
-
-/* .advantages-image-container-souvenirs {
-  width: 64px;
-  height: 76px;
-  margin-bottom: 28px;
-  background-image: url("../images/souvenirs.svg");
-  background-repeat: no-repeat;
-} */
 
 .hotel-search-title {
   margin: 0;
