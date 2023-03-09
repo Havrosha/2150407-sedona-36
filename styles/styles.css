@@ -202,7 +202,8 @@ background-position: center;
 
 .button-filter-catalog-container {
   width: 191px;
-  margin-left: 70px;
+  margin-top: auto;
+  margin-bottom: -3px;
 }
 
 .button-filter-catalog {
@@ -317,6 +318,67 @@ background-position: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+
+.control:hover .control-mark-type,
+.control:hover .control-mark-infrastructure {
+  opacity: 0.6;
+}
+
+.control:focus .control-mark-type,
+.control:focus .control-mark-infrastructure {
+  border: 3px solid #83B3D3;
+  opacity: 1;
+}
+
+.control:active .control-mark-type,
+.control:active .control-mark-infrastructure {
+  opacity: 0.3;
+}
+
+.control-input[type="radio"]:checked + .control-mark-type::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-infrastructure::before {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 13px;
+  height: 10px;
+  content: "";
+  background-image: url("../images/graphics/check-mark.svg");
+}
+
+.control-mark-infrastructure {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-mark-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
 }
 
 .select-control {
@@ -713,6 +775,10 @@ background-position: center;
   justify-content: space-between;
 }
 
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .catalog-filter-container-left {
   display: flex;
   justify-content: space-between;
@@ -725,11 +791,21 @@ background-position: center;
   width: 550px;
 }
 
+.catalog-filter-group
+{
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+  border: none;
+}
+
 .catalog-filter-title {
   color: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .range-wrapper-inputs {
@@ -775,7 +851,7 @@ background-position: center;
   width: 287px;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 48px;
+  margin-top: 44px;
 }
 
 .range-bar {
@@ -837,6 +913,7 @@ background-position: center;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 8px;
   padding: 0;
 }
 
