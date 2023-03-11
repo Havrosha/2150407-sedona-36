@@ -172,5 +172,62 @@
         </div>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-booking">
+        <div class="modal-content-container">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+            <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="modal-form-text-container">
+                <div class="frame-text-input">
+                  <label class="text-input">Дата Заезда:</label>
+                  <input class="control-modal-input control-modal-input-image" type="text" placeholder="27 апреля 2020">
+                  <span class="input-comment input-comment-error">Мы не можем отправить вас в прошлое.</span>
+                </div>
+                <div class="frame-text-input">
+                  <label class="text-input">Дата Выезда:</label>
+                  <input class="control-modal-input control-modal-input-image" type="text" placeholder="1 сентября 2021">
+                  <span class="input-comment">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </div>
+              <div class="modal-form-number-container">
+                <div class="frame-number-input">
+                  <label class="text-input">Взрослые:</label>
+                  <div class="area-input">
+                    <button class="button-plus-minus button-minus" type="submit">
+                      <svg class="button-minus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="2"><path d="M.4 0v2h14V0H.4Z" fill="currentColor"/></svg>
+                    </button>
+                  <input class="control-modal-input input-number" type="number" name="quantity-old" placeholder="2">
+                    <button class="button-plus-minus button-plus" type="submit">
+                      <svg class="button-plus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="frame-number-input frame-number-input-info">
+                  <span class="form-label">
+                    <label class="text-input">Дети:</label>
+                    <span class="tooltip">
+                      <button class="button-tooltip" type="button" aria-labelledby="tooltip-label-date"></button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <div class="area-input">
+                    <button class="button-plus-minus button-minus" type="submit">
+                      <svg class="button-minus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="2"><path d="M.4 0v2h14V0H.4Z" fill="currentColor"/></svg>
+                    </button>
+                    <input class="control-modal-input input-number" type="number" name="quantity-children" placeholder="2">
+                    <button class="button-plus-minus button-plus" type="submit">
+                      <svg class="button-plus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="button modal-button" type="submit">НАЙТИ</button>
+            </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
