@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/pt-sans-regular.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/pt-sans-bold.woff2") format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: italic;
   font-weight: 400;
   src: url("../fonts/pt-sans-italic.woff2") format("woff2");
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: italic;
   font-weight: 700;
   src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
@@ -174,6 +174,8 @@ body {
   height: 44px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-view-current,
@@ -184,20 +186,14 @@ body {
 
 .button-view-table {
   background-image: url("../images/graphics/table.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .button-view-slideshow {
-background-image: url("../images/graphics/slideshow.svg");
-background-repeat: no-repeat;
-background-position: center;
+  background-image: url("../images/graphics/slideshow.svg");
 }
 
 .button-view-list {
-background-image: url("../images/graphics/list.svg");
-background-repeat: no-repeat;
-background-position: center;
+  background-image: url("../images/graphics/list.svg");
 }
 
 .button-filter-catalog-container {
@@ -245,12 +241,12 @@ background-position: center;
   padding: 20px 16px;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:not(.navigation-link-current):hover,
+.navigation-link:not(.navigation-link-current):focus {
   color: #756257;
 }
 
-.navigation-link:active {
+.navigation-link:not(.navigation-link-current):active {
   opacity: 0.3;
 }
 
@@ -324,23 +320,23 @@ background-position: center;
   cursor: pointer;
 }
 
-.control:hover .control-mark-type,
-.control:hover .control-mark-infrastructure {
+.control:hover .control-mark-radio,
+.control:hover .control-mark-checkbox {
   opacity: 0.6;
 }
 
-.control:focus .control-mark-type,
-.control:focus .control-mark-infrastructure {
+.control:focus .control-mark-radio,
+.control:focus .control-mark-checkbox {
   border: 3px solid #83B3D3;
   opacity: 1;
 }
 
-.control:active .control-mark-type,
-.control:active .control-mark-infrastructure {
+.control:active .control-mark-radio,
+.control:active .control-mark-checkbox {
   opacity: 0.3;
 }
 
-.control-input[type="radio"]:checked + .control-mark-type::before {
+.control-input[type="radio"]:checked + .control-mark-radio::before {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -351,9 +347,9 @@ background-position: center;
   content: "";
 }
 
-.control-input[type="checkbox"]:checked + .control-mark-infrastructure::before {
+.control-input[type="checkbox"]:checked + .control-mark-checkbox::before {
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 4px;
   width: 13px;
   height: 10px;
@@ -361,7 +357,7 @@ background-position: center;
   background-image: url("../images/graphics/check-mark.svg");
 }
 
-.control-mark-infrastructure {
+.control-mark-checkbox {
   position: absolute;
   left: 0;
   top: 0;
@@ -371,7 +367,7 @@ background-position: center;
   border-radius: 4px;
 }
 
-.control-mark-type {
+.control-mark-radio {
   position: absolute;
   left: 0;
   top: 0;
@@ -581,6 +577,7 @@ background-position: center;
 }
 
 .hotel-search-title {
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
   font-size: 30px;
@@ -623,6 +620,7 @@ background-position: center;
 .subscription-title {
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -653,12 +651,12 @@ background-position: center;
 }
 
 .input-field {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-size: 18px;
   flex-grow: 1;
   border: none;
   border-radius: 4px 0 0 4px;
-  background-color: #F2F2F2;;
+  background-color: #F2F2F2;
   padding-left: 20px;
   padding-top: 16px;
   padding-bottom: 12px;
@@ -683,7 +681,7 @@ background-position: center;
   right: 0;
   bottom: -40px;
   height: 1px;
-  background-color: #E6E6E6;  ;
+  background-color: #E6E6E6;
   content: "";
 }
 
@@ -834,6 +832,7 @@ background-position: center;
 .range-input {
   min-width: 11px;
   font: inherit;
+  font-weight: 700;
   background-color: transparent;
   border: none;
   outline: none;
@@ -856,7 +855,9 @@ background-position: center;
 
 .range-bar {
   position: absolute;
+  width: 210px;
   height: 4px;
+  left: 10px;
   background-color: #FFFFFF;
 }
 
@@ -948,15 +949,15 @@ background-position: center;
   cursor: pointer;
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-link:not(.breadcrumbs-link-current):hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link:not(.breadcrumbs-link-current):focus {
   color: #FFFFFF;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-link:not(.breadcrumbs-link-current):active {
   opacity: 0.3;
 }
 
@@ -1143,6 +1144,10 @@ background-position: center;
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1191,9 +1196,10 @@ background-position: center;
   margin: 0;
   margin-top: 2px;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: inherit;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .modal-form-text-container {
@@ -1212,7 +1218,7 @@ background-position: center;
 }
 
 .text-input {
-  font-family: 'PT Sans', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1234,7 +1240,7 @@ background-position: center;
   border: none;
   border-radius: 25px;
   background-color: #83B3D3;
-  background-image: url(../images/graphics/info.svg);
+  background-image: url("../images/graphics/info.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1250,7 +1256,7 @@ background-position: center;
 .tooltip-text {
   background-color: #333333;
   color: #ffffff;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1273,20 +1279,20 @@ background-position: center;
 }
 
 .tooltip-text:after {
-  content:'';
+  content: "";
   background-image: url("../images/graphics/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
   position:absolute;
   bottom: 99%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
 .input-comment {
-  font-family: 'PT Sans', sans-serif;
+  font-family: inherit;
   padding-top: 4px;
   padding-left: 20px;
   grid-column: 2;
@@ -1304,7 +1310,7 @@ background-position: center;
   border-radius: 4px;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
 }
@@ -1333,6 +1339,7 @@ background-position: center;
 
 .input-number::-webkit-outer-spin-button,
 .input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
