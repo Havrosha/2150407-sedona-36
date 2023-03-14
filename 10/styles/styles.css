@@ -846,7 +846,12 @@ body {
 }
 
 .catalog-filter-label:focus-within {
-  outline: 2px solid #83b3d3;
+  outline: 3px solid #83b3d3;
+}
+
+.catalog-filter-label:active {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
 }
 
 .catalog-filter-label:disabled {
