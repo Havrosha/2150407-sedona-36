@@ -51,6 +51,7 @@ body {
   line-height: 21px;
   color: #000000;
   width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   min-height: 100%;
   margin: 0 auto;
 }
@@ -330,11 +331,6 @@ body {
   opacity: 0.6;
 }
 
-.control:focus .control-mark-radio,
-.control:focus .control-mark-checkbox {
-  border: 3px solid #83b3d3;
-}
-
 .control:active .control-mark-radio,
 .control:active .control-mark-checkbox {
   opacity: 0.3;
@@ -363,7 +359,7 @@ body {
 
 .control-input[type="checkbox"]:focus + .control-mark-checkbox,
 .control-input[type="radio"]:focus + .control-mark-radio {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .control-mark-checkbox {
@@ -847,6 +843,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog-filter-label:focus-within {
+  outline: 2px solid #83b3d3;
+}
+
 .catalog-filter-label:disabled {
   opacity: 0.2;
 }
@@ -1192,6 +1192,8 @@ body {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
 
 .modal-booking {

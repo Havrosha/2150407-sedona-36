@@ -11,7 +11,7 @@
       <!--шапка сайта-->
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
+          <a class="navigation-logo">
             <img class="page-header-logo" src="images/header-logo.svg" width="140" height="70" alt="Логотип «Седона».">
           </a>
           <ul class="navigation-list clear-list">
@@ -175,11 +175,11 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-booking">
         <div class="modal-content-container">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-form-text-container">
                 <div class="frame-text-input">
                   <label class="text-input">Дата Заезда:</label>
@@ -196,11 +196,11 @@
                 <div class="frame-number-input">
                   <label class="text-input">Взрослые:</label>
                   <div class="area-input">
-                    <button class="button-plus-minus button-minus" type="submit">
+                    <button class="button-plus-minus button-minus" type="button">
                       <svg class="button-minus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="2"><path d="M.4 0v2h14V0H.4Z" fill="currentColor"/></svg>
                     </button>
                   <input class="control-modal-input input-number" type="number" name="quantity-old" required placeholder="2">
-                    <button class="button-plus-minus button-plus" type="submit">
+                    <button class="button-plus-minus button-plus" type="button">
                       <svg class="button-plus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor"/></svg>
                     </button>
                   </div>
@@ -214,18 +214,18 @@
                     </span>
                   </span>
                   <div class="area-input">
-                    <button class="button-plus-minus button-minus" type="submit">
+                    <button class="button-plus-minus button-minus" type="button">
                       <svg class="button-minus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="2"><path d="M.4 0v2h14V0H.4Z" fill="currentColor"/></svg>
                     </button>
                     <input class="control-modal-input input-number" type="number" name="quantity-children" placeholder="2">
-                    <button class="button-plus-minus button-plus" type="submit">
+                    <button class="button-plus-minus button-plus" type="button">
                       <svg class="button-plus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor"/></svg>
                     </button>
                   </div>
                 </div>
               </div>
               <button class="button modal-button" type="submit">Найти</button>
-            </form>
+          </form>
         </div>
       </div>
     </div>
