@@ -327,12 +327,14 @@ body {
 }
 
 .control:hover .control-mark-radio,
-.control:hover .control-mark-checkbox {
+.control:hover .control-mark-checkbox,
+.control:hover .control-text {
   opacity: 0.6;
 }
 
 .control:active .control-mark-radio,
-.control:active .control-mark-checkbox {
+.control:active .control-mark-checkbox,
+.control:hover .control-text {
   opacity: 0.3;
 }
 
