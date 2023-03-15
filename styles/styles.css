@@ -400,6 +400,7 @@ body {
   margin-right: 70px;
   padding: 12px 20px;
   padding-right: 40px;
+  background-color: #ffffff;
   background-image: url("../images/graphics/arrow-bottom-black.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1193,9 +1194,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
