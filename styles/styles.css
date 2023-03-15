@@ -947,6 +947,7 @@ body {
 
 .inner-header {
   margin-bottom: 50px;
+  background-color: #82b3d3;
   background-image: url("../images/background/background-filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1197,9 +1198,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
