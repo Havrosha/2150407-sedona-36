@@ -642,6 +642,7 @@ body {
 }
 
 .subscription-description {
+  color: #333333;
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 0;
