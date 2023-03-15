@@ -35,6 +35,10 @@ html {
 }
 
 body {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   min-width: 1200px;
   margin: 0;
   height: 100%;
@@ -45,10 +49,7 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font-family: inherit;
   color: #000000;
   width: 1200px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -598,7 +599,7 @@ body {
 }
 
 .hotel-search-description {
-  margin: 0;
+  margin-bottom: 0;
   font-size: 22px;
   line-height: 26px;
 }
@@ -641,7 +642,7 @@ body {
 .subscription-description {
   font-size: 22px;
   line-height: 26px;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .subscription-content-container {
@@ -980,7 +981,7 @@ body {
   right: -20px;
   width: 9px;
   height: 8px;
-  content: url("../images/graphics/arrow-bottom-white.svg");
+  content: url("../images/graphics/arrow-bottom-right.svg");
 }
 
 .breadcrumbs-item:last-child::after {
@@ -1048,6 +1049,7 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   font-weight: 700;
   font-size: 20px;
@@ -1126,6 +1128,7 @@ body {
 }
 
 .footer-social-list {
+  max-width: 188px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1180,7 +1183,7 @@ body {
 }
 
 .modal-container {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   position: fixed;
   top: 0;
   left: 0;
@@ -1285,12 +1288,11 @@ body {
 .button-tooltip {
   width: 26px;
   height: 26px;
+  font-size: 16px;
+  color: #ffffff;
   border: none;
   border-radius: 25px;
   background-color: #83b3d3;
-  background-image: url("../images/graphics/info.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -1354,11 +1356,13 @@ body {
 }
 
 .control-modal-input {
+  position: relative;
+  z-index: 1;
   width: 420px;
   height: 48px;
   background: #f2f2f2;
-  border: none;
   border-radius: 4px;
+  border: none;
   margin: 0;
   padding: 0;
   font-family: inherit;
@@ -1380,6 +1384,18 @@ body {
   background-repeat: no-repeat;
   background-position: 95% 45%;
   padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+
+.control-modal-input-image:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.control-modal-input-image:focus:not(:placeholder-shown) {
+  outline: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .input-number {
