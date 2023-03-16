@@ -668,6 +668,7 @@ body {
 }
 
 .input-field {
+  position: relative;
   font-family: inherit;
   font-size: 18px;
   flex-grow: 1;
@@ -677,6 +678,7 @@ body {
   padding-left: 20px;
   padding-top: 16px;
   padding-bottom: 12px;
+  z-index: 1;
 }
 
 .input-field:disabled {
@@ -1198,9 +1200,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
