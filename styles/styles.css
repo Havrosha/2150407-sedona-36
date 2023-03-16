@@ -1198,9 +1198,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1223,18 +1223,19 @@ body {
 }
 
 .modal-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   padding: 0;
   left: 544px;
   top: 0;
   width: 52px;
   height: 52px;
+  color: rgba(0, 0, 0, 1);
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/graphics/cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -1245,7 +1246,7 @@ body {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-title {
