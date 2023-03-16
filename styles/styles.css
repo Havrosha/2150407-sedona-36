@@ -1,32 +1,16 @@
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans", sans-serif;
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -400,6 +384,7 @@ body {
   margin-right: 70px;
   padding: 12px 20px;
   padding-right: 40px;
+  background-color: #ffffff;
   background-image: url("../images/graphics/arrow-bottom-black.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -599,6 +584,7 @@ body {
 }
 
 .hotel-search-description {
+  color: #333333;
   margin-bottom: 0;
   font-size: 22px;
   line-height: 26px;
@@ -640,6 +626,7 @@ body {
 }
 
 .subscription-description {
+  color: #333333;
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 0;
@@ -665,6 +652,7 @@ body {
 }
 
 .input-field {
+  position: relative;
   font-family: inherit;
   font-size: 18px;
   flex-grow: 1;
@@ -674,6 +662,7 @@ body {
   padding-left: 20px;
   padding-top: 16px;
   padding-bottom: 12px;
+  z-index: 1;
 }
 
 .input-field:disabled {
@@ -754,6 +743,7 @@ body {
 }
 
 .hotel-card-rating {
+  color: #333333;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -943,6 +933,7 @@ body {
 
 .inner-header {
   margin-bottom: 50px;
+  background-color: #82b3d3;
   background-image: url("../images/background/background-filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1218,18 +1209,19 @@ body {
 }
 
 .modal-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   padding: 0;
   left: 544px;
   top: 0;
   width: 52px;
   height: 52px;
+  color: rgba(0, 0, 0, 1);
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/graphics/cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -1240,7 +1232,7 @@ body {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-title {
@@ -1358,7 +1350,7 @@ body {
 .control-modal-input {
   position: relative;
   z-index: 1;
-  width: 420px;
+  width: 400px;
   height: 48px;
   background: #f2f2f2;
   border-radius: 4px;
@@ -1402,6 +1394,7 @@ body {
   width: 31px;
   border-radius: 0;
   text-align: center;
+  -moz-appearance: textfield;
 }
 
 .input-number::-webkit-outer-spin-button,

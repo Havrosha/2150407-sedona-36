@@ -130,7 +130,7 @@
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="input-field" type="text" name="email" id="appointment-subscription" placeholder="Ваш e-mail">
+            <input class="input-field" type="email" name="email" id="appointment-subscription" required placeholder="Ваш e-mail">
             <button class="button button-blue subscription-form-button" type="submit">Подписаться</button>
           </form>
         </div>
@@ -176,38 +176,41 @@
       <div class="modal modal-booking">
         <div class="modal-content-container">
           <button class="modal-close-button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" ><path d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z" fill="currentColor"/></svg>
             <span class="visually-hidden">Закрыть</span>
           </button>
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-form-text-container">
               <div class="frame-text-input">
-                <label class="text-input">Дата Заезда:</label>
-                <input class="control-modal-input control-modal-input-image" type="text" required placeholder="27 апреля 2020">
+                <label class="text-input" for="arrival-date">Дата Заезда:</label>
+                <input class="control-modal-input control-modal-input-image" type="text" id="arrival-date" name="arrival-date" required placeholder="27 апреля 2020">
                 <span class="input-comment input-comment-error">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="frame-text-input">
-                <label class="text-input">Дата Выезда:</label>
-                <input class="control-modal-input control-modal-input-image" type="text" required placeholder="1 сентября 2021">
+                <label class="text-input" for="departure-date">Дата Выезда:</label>
+                <input class="control-modal-input control-modal-input-image" type="text" id="departure-date" name="departure-date" required placeholder="1 сентября 2023">
                 <span class="input-comment">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
             <div class="modal-form-number-container">
               <div class="frame-number-input">
-                <label class="text-input">Взрослые:</label>
+                <label class="text-input" for="quantity-old">Взрослые:</label>
                 <div class="area-input">
                   <button class="button-plus-minus button-minus" type="button">
                     <svg class="button-minus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="2"><path d="M.4 0v2h14V0H.4Z" fill="currentColor"/></svg>
+                    <span class="visually-hidden">Минус</span>
                   </button>
-                  <input class="control-modal-input input-number" type="number" name="quantity-old" required placeholder="2">
+                  <input class="control-modal-input input-number" type="number" id="quantity-old" name="quantity-old" required placeholder="2">
                   <button class="button-plus-minus button-plus" type="button">
                     <svg class="button-plus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor"/></svg>
+                    <span class="visually-hidden">Плюс</span>
                   </button>
                 </div>
               </div>
               <div class="frame-number-input frame-number-input-info">
                 <span class="form-label">
-                  <label class="text-input">Дети:</label>
+                  <label class="text-input" for="quantity-children">Дети:</label>
                   <span class="tooltip">
                     <button class="button-tooltip" type="button" aria-labelledby="tooltip-label-date">i</button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
@@ -216,10 +219,12 @@
                 <div class="area-input">
                   <button class="button-plus-minus button-minus" type="button">
                     <svg class="button-minus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="2"><path d="M.4 0v2h14V0H.4Z" fill="currentColor"/></svg>
+                    <span class="visually-hidden">Минус</span>
                   </button>
-                  <input class="control-modal-input input-number" type="number" name="quantity-children" placeholder="2">
+                  <input class="control-modal-input input-number" type="number" id="quantity-children" name="quantity-children" placeholder="2">
                   <button class="button-plus-minus button-plus" type="button">
                     <svg class="button-plus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="currentColor"/></svg>
+                    <span class="visually-hidden">Плюс</span>
                   </button>
                 </div>
               </div>
