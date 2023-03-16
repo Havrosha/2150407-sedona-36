@@ -632,6 +632,10 @@ body {
   margin-bottom: 0;
 }
 
+.subscription-description-white {
+  color: #ffffff;
+}
+
 .subscription-content-container {
   width: 684px;
   margin: 0 auto;
